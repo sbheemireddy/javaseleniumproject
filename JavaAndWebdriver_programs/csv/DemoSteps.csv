@@ -1,0 +1,69 @@
+StepKey,Method,Web Object,Web Element,Value to set,Conditional Statements,description
+,,,,,,
+stepkey1,open,http://www.gmail.com,,,,Open Url
+stepkey1,type,//input[@name='Email'],xpath,gfasur1@gmail.com,,Provided username
+stepkey1,type,//input[@id='Passwd'],xpath,fasur@123,,provided password
+stepkey1,click,//*[@id='signIn'],xpath,,,Clicked on login button
+stepkey1,verifyTextAtLocation,//*[@id=':vc']/div/div,xpath,COMPOSE,,Verified Compose button text
+stepkey1,type,//*[@id='gbqfq'],xpath,google,,Typed 'google' value to textbox
+stepkey1,verifyTextAtTextbox,//*[@id='gbqfq'],xpath,google,,Verified textbox value
+,,,,,,
+,,,,,,
+stepkey2,open,https://medley-test04.isc-seo.upenn.edu/fastUnit/jsp/fast.do,,,,Opened FastUnit URL
+stepkey2,type,//*[@id='pennkey'],xpath,GetStaticData(UserID),,Provided UserName
+stepkey2,type,//*[@id='password'],xpath,GetStaticData(Pass),,Provided Password
+stepkey2,click,//*[@id='theForm']/form/div[2]/div/div[2]/input,xpath,,,Clicked on Login button
+stepkey2,click,ajax.jsp,linkText,,,Clicked on ajax.jsp link
+stepkey2,VerifyTextPresent,,,Ajax1,,Ajax text is present
+,,,,,,
+stepkey21,type,//form[@id='ajax1']/table/tbody/tr/td[3]/input,xpath,abc,Provided 'abc' value to textfield1,
+stepkey21,type,//form[@id='ajax1']/table/tbody/tr/td[4]/input,xpath,bcd,Provided'bcd' value to textfield2,
+,,,,,,
+,,,,,,
+stepkey3,type,//form[@id='form6']/table/tbody/tr/td[3]/select,xpath,INDIA,Selected 'INDIA' from drop-down,
+stepkey10,open,http://www.gmail.com,,,,
+stepkey10,VerifyTextAtLocation,//html/body/div[1]/div[2]/div[2]/div[1]/h1,xpath,Gmail,Gmail text is found,
+,,,,,,
+,,,,,,
+,,,,,,
+exacly_login,open,http://test.exacly.me/lc/home.seam,,,,Open exacly.me URL
+exacly_login,click,//div[@class='topNavigation']/div[2]/form/ul/li[2]/a,xpath,,,Clicked on login button
+,,,,,,
+exacly_login,type,//*[@id='regForm0:password0'],xpath,password,,Provided password
+exacly_login,type,//*[@id='regForm0:email0'],xpath,may17@abc.com,,Provided username
+exacly_login,type,//*[@id='regForm0:password0'],xpath,password,,Provided password
+exacly_login,click,//div[@class='popUpBut']/a,xpath,,,Clicked on login button
+,,,,,,
+,,,,,,
+echosite,open,http://www.echoecho.com/toolcustomforms.htm,,,,
+echosite2,click,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/form/table[1]/tbody/tr[9]/td[2]/b/font/table/tbody/tr[3]/td/input[1],xpath,,,
+,,,,,,
+,,,,,,
+echosite2,type,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/form/table[3]/tbody/tr/td/b/font/select,xpath,Sample 2,,
+echosite2,click,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/form/table[3]/tbody/tr/td/b/font/input[4],xpath,,,
+echosite2,click,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/form/table[3]/tbody/tr/td/b/font/input[7],xpath,,,
+echosite1,isDisplayed,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/form/b[4]/ul/li[1]/a,xpath,,,
+echosite,isSelected,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/form/table[3]/tbody/tr/td/b/font/input[7],xpath,,,
+echosite1,open,http://www.echoecho.com/htmlforms11.htm,,,,
+echosite1,type,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/span/form/table[1]/tbody/tr/td/table/tbody/tr[2]/td[3]/select,xpath,Milk,,
+,,,,,,
+echosite11,open,http://www.echoecho.com/htmlforms11.htm,,,,
+echosite11,type,//html/body/div[1]/table[9]/tbody/tr/td[4]/table/tbody/tr/td/div/span/form/table[1]/tbody/tr/td/table/tbody/tr[2]/td[3]/select,xpath,Milk,,
+,,,,,,
+echosite12,open,http://timesofindia.indiatimes.com/,,,,
+echosite12,selectDropDownList,//*[@id='cityselection'],xpath,Delhi,,
+echosite12,selectDropDownList,//*[@id='cityselection'],xpath,Goa,,
+,,,,,,
+,,,,,,
+abc,deleteCookies,,,,,
+abc,open,/,,,,
+abc,type,//input[@name='Email'],,gfasur1@gmail.com,,
+abc,type,//input[@id='Passwd'],,fasur@123,,
+abc,click,//*[@id='signIn'],,"setDynamicData(bhima,abc,GetTimeStamp[yyymmdd],@gmail.com)",,
+abc,verifyElementPresent,,,//*[@id=':aq']/div/div[1]/span/a,{True:bcd}{False:bcd1},
+bcd,verifyElementPresent,//*[@id=':ao']/div/div[1]/span/a,,,,
+bcd1,click,//*[@id=':al']/div/div[1]/span/a,,,,
+,,,,,,
+echosite123,open,http://ec2-54-200-251-85.us-west-2.compute.amazonaws.com/lc/home.seam,,,,
+echosite1234,click,Log In,linkText,,,Clicked on 'Login' link
+echosite123,pause,,,10000,,

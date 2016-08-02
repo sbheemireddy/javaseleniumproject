@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [suite1]" parallel="tests">
+  <parameter name="browserType" value="ie"/>
+  <test name="ie(failed)" parallel="tests">
+    <parameter name="browserType" value="ie"/>
+    <classes>
+      <class name="selenium.example.GridExample">
+        <methods>
+          <include name="testcase2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- selenium.example.GridExample -->
+    </classes>
+  </test> <!-- ie(failed) -->
+  <test name="chrome(failed)" parallel="tests">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="selenium.example.GridExample">
+        <methods>
+          <include name="testcase2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- selenium.example.GridExample -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [suite1] -->

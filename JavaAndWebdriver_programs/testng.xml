@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1" parallel="tests" thread-count="10">
+   <test name="chrome" >
+   <parameter name ="browserType" value="chrome"/>
+        <classes>
+            <class name ="selenium.example.GridExample"/>
+        </classes>
+        </test>
+    <test name="ie">
+    <parameter name ="browserType" value="ie"/>
+        <classes>
+            <class name ="selenium.example.GridExample"/>
+        </classes>
+        </test>
+  </suite>
+
+
+
+
